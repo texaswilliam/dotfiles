@@ -1,0 +1,5 @@
+[default]
+algorithm best
+color e:\e[31;7m,e:\e[32;7m
+context 3
+punctuation

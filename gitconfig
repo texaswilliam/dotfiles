@@ -1,0 +1,20 @@
+[alias]
+	wdiff = diff --word-diff=color
+[color]
+	ui = true
+[core]
+	autocrlf = input
+	pager = less -FRX
+	whitespace = space-before-tab,trailing-space
+[diff]
+	algorithm = histogram
+	wordRegex = [:alnum:]+|[^[:space:]]
+[grep]
+	patternType = perl
+[pager]
+	help = less -R
+[push]
+	default = current
+[user]
+	name = William Pyburn
+	email = texas.william@gmail.com
