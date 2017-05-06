@@ -1,0 +1,17 @@
+shopt -s checkwinsize globstar
+
+export CLICOLOR=1
+
+function whether { command -v -- "$@" > /dev/null; }
+export -f whether
+
+cd
+
+[ -d .bash_profile.d ] && for file in .bash_profile.d/*; do . "$file"; done
+[ -f .bashrc ] && . .bashrc
+
+if whether fortune; then
+    echo
+    fortune
+    echo
+fi
