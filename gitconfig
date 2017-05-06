@@ -1,4 +1,5 @@
 [alias]
+	gcgc = repack -adf --depth=50 --window=500
 	wdiff = diff --word-diff=color
 [color]
 	ui = true
