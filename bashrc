@@ -9,10 +9,8 @@ alias ls='ls --color=auto --file-type'
 if [ "`uname -s`" = Darwin ]; then
     alias chrome='open -a Google\ Chrome'
     export BROWSER='open -a Google\ Chrome'
-    if [ -d /usr/local/opt/coreutils ]; then
-        PATH=/usr/local/opt/coreutils/libexec/gnubin:"$PATH"
-        MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH:-`man --path`}"
-    fi
+    for gnubin in /usr/local/opt/*/libexec/gnubin; do PATH="$gnubin:$PATH"; done
+    for gnuman in /usr/local/opt/*/libexec/gnuman; do MANPATH="$gnuman:${MANPATH:-"`man --path`"}"; done
 fi
 
 [ -d ~/bin ] && PATH="~/bin:$PATH"
