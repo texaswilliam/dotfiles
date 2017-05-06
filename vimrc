@@ -1,15 +1,11 @@
-unlet! skip_defaults_vim 
-source $VIMRUNTIME/defaults.vim
-
-set expandtab
-set hlsearch
-set incsearch
 set nocompatible
-set nowrap
-set shiftwidth=4
-set softtabstop=4
 
+set backspace=indent,eol,start
+set ruler
+set scrolloff=5
+set hlsearch incsearch
+set expandtab shiftwidth=4 tabstop=4
+set nowrap
+
+filetype indent plugin on
 syntax on
-filetype on
-filetype indent on
-filetype plugin on
