@@ -3,6 +3,9 @@
 	wdiff = diff --word-diff=color
 [color]
 	ui = true
+[color "diff"]
+	new = green bold
+	old = red bold
 [core]
 	autocrlf = input
 	pager = less -FRX
