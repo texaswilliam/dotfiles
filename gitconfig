@@ -9,7 +9,7 @@
 	whitespace = space-before-tab,trailing-space
 [diff]
 	algorithm = histogram
-	wordRegex = [:alnum:]+|[^[:space:]]
+	wordRegex = [[:alnum:]]+|[[:graph:]]
 [grep]
 	patternType = perl
 [pager]
