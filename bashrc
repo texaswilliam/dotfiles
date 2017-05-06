@@ -30,7 +30,7 @@ export LC_ALL="$LANG"
 export LESS='R'
 export LESSHISTFILE='/dev/null'
 export PAGER='less'
-export PS1='\[\e[0;34m\]\u@\h\[\e[0m\]:\[\e[36m\]\w$(__git_ps1 '\''\[\e[31m\]%s'\'')\[\e[0m\]?$?\$ '
+export PS1='\[\e[0;34m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\]:\[\e[37m\]\w\[\e[31m\]$(__git_ps1 %s)\[\e[0m\]?\[\e[$(($? == 0 ? 32 : 31))m\]$?\[\e[0m\]\$ '
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
