@@ -7,7 +7,7 @@ export -f whether
 
 cd
 
-[ -d .bash_profile.d ] && for file in .bash_profile.d/*; do . "$file"; done
+[ -d .bash_profile.d ] && for file in .bash_profile.d/*; do [ -x "$file" ] && . "$file"; done
 [ -f .bashrc ] && . .bashrc
 
 if whether fortune; then

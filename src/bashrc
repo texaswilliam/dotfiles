@@ -1,1 +1,1 @@
-[ -d ~/.bashrc.d ] && for file in ~/.bashrc.d/*; do . "$file"; done
+[ -d ~/.bashrc.d ] && for file in ~/.bashrc.d/*; do [ -x "$file" ] && . "$file"; done
