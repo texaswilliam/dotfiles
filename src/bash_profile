@@ -2,10 +2,10 @@ shopt -s checkwinsize globstar
 
 export CLICOLOR=1
 
+cd
+
 function whether { command -v -- "$@" > /dev/null; }
 export -f whether
-
-cd
 
 [ -d .bash_profile.d ] && for file in .bash_profile.d/*; do [ -x "$file" ] && . "$file"; done
 [ -f .bashrc ] && . .bashrc
