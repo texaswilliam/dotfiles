@@ -9,3 +9,5 @@ set nowrap
 
 filetype indent plugin on
 syntax on
+
+map \ @:
