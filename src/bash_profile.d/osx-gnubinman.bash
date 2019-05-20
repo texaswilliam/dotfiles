@@ -1,4 +1,4 @@
-[ "`uname -s`" = Darwin ] || return
+[ "`uname -s`" = Darwin ] || return 0
 
 for gnubin in /usr/local/opt/*/libexec/gnubin; do
     export PATH="$gnubin:$PATH"
