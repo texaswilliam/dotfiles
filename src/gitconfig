@@ -17,6 +17,8 @@
 	patternType = perl
 [pager]
 	help = less -R
+[pull]
+	rebase = true
 [push]
 	default = current
 [user]
