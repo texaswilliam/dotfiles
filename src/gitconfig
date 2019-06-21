@@ -21,6 +21,8 @@
 	rebase = true
 [push]
 	default = current
+[rebase]
+	autoStash = true
 [user]
 	name = William Pyburn
 	email = texas.william@gmail.com
