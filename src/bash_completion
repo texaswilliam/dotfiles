@@ -1,0 +1,1 @@
+[ -d ~/.bash_completion.d ] && for file in ~/.bash_completion.d/*; do [ -x "$file" ] && . "$file"; done

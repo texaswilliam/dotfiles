@@ -1,0 +1,2 @@
+_win () { CDPATH="`wslpath "$USERPROFILE"`" _cd "$@"; }
+complete -o nospace -F _win win
