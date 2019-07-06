@@ -1,4 +1,4 @@
 [[ "`uname -r`" =~ Microsoft$ ]] || return 0
 
-win () { cd "/mnt/c/Users/wpyburn/$*"; }
+win () { cd "`wslpath "$USERPROFILE"`/$*"; }
 export -f win
