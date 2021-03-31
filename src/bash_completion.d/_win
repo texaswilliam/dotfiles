@@ -1,2 +1,6 @@
-_win () { CDPATH="`wslpath "$USERPROFILE"`" _cd "$@"; }
+_win () {
+    pushd "$USERPROFILE" > /dev/null
+    _cd "$@"
+    popd > /dev/null
+}
 complete -o nospace -F _win win

@@ -1,4 +1,4 @@
 [[ "`uname -r`" =~ Microsoft$ ]] || return 0
 
-win () { cd "`wslpath "$USERPROFILE"`/$*"; }
+win () { cd "$USERPROFILE"'/'"$*"; }
 export -f win
