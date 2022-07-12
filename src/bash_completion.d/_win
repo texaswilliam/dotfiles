@@ -1,3 +1,5 @@
+[[ "`uname -r`" =~ (Microsoft|microsoft-standard-WSL2)$ ]] || return 0
+
 _win () {
     pushd "$USERPROFILE" > /dev/null
     _cd "$@"
