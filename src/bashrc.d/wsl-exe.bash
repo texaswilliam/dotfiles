@@ -1,4 +1,4 @@
-[[ "`uname -r`" =~ Microsoft$ ]] || return 0
+[[ "`uname -r`" =~ (Microsoft|microsoft-standard-WSL2)$ ]] || return 0
 
 command_not_found_handle () {
     local cmd="$1"
