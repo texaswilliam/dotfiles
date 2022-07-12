@@ -1,22 +1,19 @@
 [alias]
 	gcgc = repack -adf --depth=50 --window=500
 	wdiff = diff --word-diff=color
-[color]
-	ui = true
-[color "diff"]
-	new = green bold
-	old = red bold
 [core]
 	autocrlf = input
-	pager = less -FRX
+	pager = delta --keep-plus-minus-markers
 	whitespace = space-before-tab,trailing-space
+[delta]
+	tokenization-regex = [[:alnum:]]+|[[:graph:]]
 [diff]
 	algorithm = histogram
 	wordRegex = [[:alnum:]]+|[[:graph:]]
 [grep]
 	patternType = perl
-[pager]
-	help = less -R
+[interactive]
+	diffFilter = delta --color-only
 [pull]
 	rebase = true
 [push]
