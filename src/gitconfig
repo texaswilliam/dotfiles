@@ -4,7 +4,7 @@
 [core]
 	autocrlf = input
 	pager = delta --keep-plus-minus-markers
-	whitespace = space-before-tab,trailing-space
+	whitespace = cr-at-eol,space-before-tab,trailing-space
 [delta]
 	tokenization-regex = [[:alnum:]]+|[[:graph:]]
 [diff]
