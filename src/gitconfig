@@ -11,6 +11,8 @@
 	tokenization-regex = [[:alnum:]]+|[[:graph:]]
 [diff]
 	algorithm = histogram
+	colorMoved = default
+	submodule = log
 	wordRegex = [[:alnum:]]+|[[:graph:]]
 [grep]
 	patternType = perl
