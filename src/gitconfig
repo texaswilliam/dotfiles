@@ -16,6 +16,8 @@
 	wordRegex = [[:alnum:]]+|[[:graph:]]
 [grep]
 	patternType = perl
+[init]
+	defaultBranch = master
 [interactive]
 	diffFilter = delta --color-only
 [pull]
