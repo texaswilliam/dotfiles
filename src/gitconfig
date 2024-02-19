@@ -16,6 +16,8 @@
 	wordRegex = [[:alnum:]]+|[[:graph:]]
 [grep]
 	patternType = perl
+[include]
+    path = ~/.gitconfig.user
 [init]
 	defaultBranch = master
 [interactive]
@@ -29,6 +31,3 @@
 	default = current
 [rebase]
 	autoStash = true
-[user]
-	name = William Pyburn
-	email = texas.william@gmail.com
