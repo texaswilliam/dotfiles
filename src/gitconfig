@@ -1,6 +1,7 @@
 [alias]
 	gcgc = repack -adf --depth=50 --window=500
 	wdiff = diff --word-diff=color
+	theirs = merge -Xtheirs --no-ff
 [core]
 	autocrlf = input
 	pager = delta --keep-plus-minus-markers
