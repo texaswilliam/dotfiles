@@ -18,7 +18,7 @@
 [grep]
 	patternType = perl
 [include]
-    path = ~/.gitconfig.user
+	path = ~/.gitconfig.user
 [init]
 	defaultBranch = master
 [interactive]
