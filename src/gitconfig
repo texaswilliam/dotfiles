@@ -4,7 +4,7 @@
 	theirs = merge -Xtheirs --no-ff
 [core]
 	autocrlf = input
-	pager = delta --keep-plus-minus-markers
+	pager = delta
 	whitespace = cr-at-eol,space-before-tab,trailing-space
 [delta]
 	light = false
